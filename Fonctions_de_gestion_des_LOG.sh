@@ -2,12 +2,26 @@ log()
 {
 echo -e $1 >> $LOG_FILE
 }
-	
+
+#log ""
+#log "#---------------------------------------------------------------------------------------#" 
+#log "#------------------- INSTALLATION OF NAGIOS AGENT %{version} (`date +'%d%m%y'`) -----------------------#" 
+#log "#---------------------------------------------------------------------------------------#" 
+#log "\n#----------------------------------------------------#" 
+#log "  Installation %{name}-%{version}, `date +'%d/%m/%y'`\n" 
+#log " " 
+
+# log "move  %{InstallParamFileTmp} to %{InstallParamFile}"
+# log " Creation of logical volume $InstallLV :   [ ECHEC ]"
+# log " Creation of logical volume $InstallLV  :   [ OK ]"
+
 msg_and_log() 
 { 
 	echo -e $1 | tee -a $LOG_FILE
 }
-  
+# msg_and_log " Installing process (see $LOG_FILE for details)......"
+# msg_and_log " Installing process (see $LOG_FILE for details)......"
+
 loggage()
 {
   TYPE="${1}"

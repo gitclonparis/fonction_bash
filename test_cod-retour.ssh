@@ -1,0 +1,5 @@
+if [ $? -ne 0 ];then
+		log " Creation of logical volume $InstallLV :   [ ECHEC ]"
+else
+		log " Creation of logical volume $InstallLV  :   [ OK ]"
+fi

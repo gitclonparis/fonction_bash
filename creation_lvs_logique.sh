@@ -65,3 +65,4 @@
 		fi
 		return 0
 	}
+# lv_create $LV %{LVSize} $MOUNT_DIR $VG >/dev/null 2>&1 
